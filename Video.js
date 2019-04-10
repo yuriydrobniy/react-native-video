@@ -400,6 +400,8 @@ Video.propTypes = {
   onAudioBecomingNoisy: PropTypes.func,
   onPictureInPictureStatusChanged: PropTypes.func,
   needsToRestoreUserInterfaceForPictureInPictureStop: PropTypes.func,
+  onRestoreUserInterfaceForPictureInPictureStop: PropTypes.func,
+  restoreUserInterfaceForPIPStopCompletionHandler: PropTypes.func,
 
   /* Required by react-native */
   scaleX: PropTypes.number,
