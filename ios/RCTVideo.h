@@ -7,7 +7,11 @@
 
 @class RCTEventDispatcher;
 
+#if TARGET_OS_TV
+@interface RCTVideo : UIView <RCTVideoPlayerViewControllerDelegate>
+#else
 @interface RCTVideo : UIView <RCTVideoPlayerViewControllerDelegate, AVPictureInPictureControllerDelegate>
+#endif
 
 @property (nonatomic, copy) RCTBubblingEventBlock onVideoLoadStart;
 @property (nonatomic, copy) RCTBubblingEventBlock onVideoLoad;
